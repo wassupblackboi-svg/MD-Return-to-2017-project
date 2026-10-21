@@ -1,0 +1,240 @@
+﻿capital = 86
+2000.1.1 = { 
+	#oob = "CAT_2000"
+	set_country_flag = dynamic_flag 
+	set_variable = { gdp_per_capita = 34.757 }
+
+	add_opinion_modifier = { target = ADO modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = ADO modifier = spanish_speaking }
+	add_opinion_modifier = { target = EGU modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = EGU modifier = spanish_speaking }
+	add_opinion_modifier = { target = MEX modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = MEX modifier = spanish_speaking }
+	add_opinion_modifier = { target = COL modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = COL modifier = spanish_speaking }
+	add_opinion_modifier = { target = ARG modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = ARG modifier = spanish_speaking }
+	add_opinion_modifier = { target = PRU modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = PRU modifier = spanish_speaking }
+	add_opinion_modifier = { target = VEN modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = VEN modifier = spanish_speaking }
+	add_opinion_modifier = { target = CHL modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = CHL modifier = spanish_speaking }
+	add_opinion_modifier = { target = ECU modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = ECU modifier = spanish_speaking }
+	add_opinion_modifier = { target = GUA modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = GUA modifier = spanish_speaking }
+	add_opinion_modifier = { target = BOL modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = BOL modifier = spanish_speaking }
+	add_opinion_modifier = { target = DOM modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = DOM modifier = spanish_speaking }
+	add_opinion_modifier = { target = HON modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = HON modifier = spanish_speaking }
+	add_opinion_modifier = { target = PAR modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = PAR modifier = spanish_speaking }
+	add_opinion_modifier = { target = ELS modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = ELS modifier = spanish_speaking }
+	add_opinion_modifier = { target = NIC modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = NIC modifier = spanish_speaking }
+	add_opinion_modifier = { target = COS modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = COS modifier = spanish_speaking }
+	add_opinion_modifier = { target = CUB modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = CUB modifier = spanish_speaking }
+	add_opinion_modifier = { target = PAN modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = PAN modifier = spanish_speaking }
+	add_opinion_modifier = { target = URG modifier = spanish_speaking }
+	reverse_add_opinion_modifier = { target = URG modifier = spanish_speaking }
+
+	#clamp_variable = {
+	#	var = suportreferendumCAT
+	#	min = 0
+	#	max = 100
+	#} 
+	#set_variable = { var = quorum_low value = 39 }
+	#set_variable = { var = quorum_medium value = 49 }
+	#set_variable = { var = quorum_high value = 58 } 
+
+	inherit_technology = SPR
+
+	add_ideas = {
+		small_medium_business_owners
+		Labour_Unions
+		landowners 
+		widespread_corruption
+		christian
+		stable_growth
+		defence_01
+		edu_03
+		health_04
+		social_06
+		bureau_03
+		western_country
+		medium_far_right_movement
+	}
+	set_variable = { small_medium_business_owners_opinion = 75 }
+	set_variable = { Labour_Unions_opinion = 55 }
+	set_variable = { landowners_opinion = 60 }
+
+	#Economy
+	set_variable = { var = corporate_tax_rate value = 35 }
+	set_variable = { var = population_tax_rate value = 18 }
+	set_variable = { var = debt value = 10 }
+	set_variable = { var = treasury value = 5 }
+	set_variable = { var = tax_rate value = 25 }
+	set_variable = { var = int_investments value = 0 }
+
+	set_popularities = {
+		democratic = 61.5
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 23.0
+		nationalist = 15.5
+	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1998.07.26"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	start_politics_input = yes
+ 
+	set_variable = { party_pop_array^0 = 0.139 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.09 } #conservatism
+	set_variable = { party_pop_array^2 = 0.1081 } #liberalism
+	set_variable = { party_pop_array^3 = 0.367 } #socialism
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0.141 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0.089 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0.155 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+	add_to_array = { ruling_party = 0 }
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Jordi Pujol"
+		picture = "jordi_pujol.dds"
+		ideology = Western_Autocracy
+		traits = {
+			Western_Western_Autocracy
+		}
+	}
+
+	#recruit_character = CAT_air_chief
+	#recruit_character = CAT_Biel_Cursach
+	#recruit_character = CAT_Albí_Saborit
+	#recruit_character = CAT_Ferran_Besora
+	#recruit_character = CAT_Aleix_Molner
+	#recruit_character = CAT_Dari_Frigola
+	#recruit_character = CAT_Hugo_Gasull
+
+	#Influence system
+	init_influence = yes
+	set_variable = { domestic_influence_amount = 100 }
+	add_to_array = { influence_array = FRA.id }
+	add_to_array = { influence_array_val = 40 }
+	add_to_array = { influence_array = ENG.id }
+	add_to_array = { influence_array_val = 30 }
+	add_to_array = { influence_array = ITA.id }
+	add_to_array = { influence_array_val = 10 }
+	add_to_array = { influence_array = USA.id }
+	add_to_array = { influence_array_val = 10 }
+	add_to_array = { influence_array = CHI.id }
+	add_to_array = { influence_array_val = 2 }
+	startup_influence = yes
+}
+
+2017.1.1 = { 
+	set_variable = { var = debt value = 77 }
+	set_variable = { var = treasury value = 15 }
+	set_variable = { var = tax_rate value = 30 }
+	set_variable = { var = int_investments value = 0 }
+	#initial_money_setup = yes	 
+	add_ideas = {
+		small_medium_business_owners
+		Labour_Unions
+		widespread_corruption
+		christian
+		### EU_member ### can't be released as EU member
+		stable_growth
+		defence_01
+		edu_03
+		health_04
+		social_06
+		bureau_03
+		western_country
+		medium_far_right_movement
+	}
+
+	#Economy
+	set_variable = { var = corporate_tax_rate value = 25 }
+	set_variable = { var = population_tax_rate value = 20 } 
+
+	set_popularities = {
+		democratic = 67.5
+		communism = 3.0
+		fascism = 0.0
+		neutrality = 29.5
+		nationalist = 0.0
+	}
+	set_politics = {
+
+		ruling_party = democratic
+		last_election = "2016.6.26"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	start_politics_input = yes
+
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.03 } #conservatism
+	set_variable = { party_pop_array^2 = 0.519 } #liberalism
+	set_variable = { party_pop_array^3 = 0.126 } #socialism
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0.03 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0.059 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0.237 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+	add_to_array = { ruling_party = 2 }
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Carles Puigdemont"
+		picture = "carles_puigdemont.dds"
+		ideology = liberalism
+		traits = {
+			western_liberalism
+		}
+	}
+}
