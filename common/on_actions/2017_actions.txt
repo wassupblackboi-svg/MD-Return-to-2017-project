@@ -1,0 +1,35 @@
+on_actions = { 
+	on_startup = {
+		effect = {   
+			if = { limit = { has_start_date > 2016.1.1 }
+			  	NEP={ transfer_state = 489 }    
+			  	LPR={ add_state_core = 1076 }    
+			  	DPR={ add_state_core = 1030 }    
+			  	every_state = { limit = { is_core_of = IRQ } add_core_of = ISI }  
+			  	every_state = { limit = { is_core_of = PAK } add_core_of = TTP }  
+			  	every_state = { limit = { is_core_of = SOM } add_core_of = SHB }  
+			  	every_state = { limit = { is_core_of = SIE } remove_core_of = AFR } 
+			  	every_state = { limit = { is_core_of = LIB } remove_core_of = LUR }  
+			  	every_state = { limit = { is_core_of = AGL } remove_core_of = UNI } 
+			  	every_state = { limit = { is_core_of = NEP } remove_core_of = NPM } 
+			  	#every_state = { limit = { is_core_of = SUD } remove_claim_by = SSU } 
+			  	#every_state = { limit = { is_core_of = DAR } remove_claim_by = SSU } 
+			  	#every_state = { limit = { is_core_of = SSU } remove_claim_by = SUD } 
+			  	every_state = { limit = { is_core_of = PAL } add_claim_by = HAM }   
+				every_country = { limit = { is_african_nation = yes }
+					if = { limit = { has_idea = OAU_member }
+						swap_ideas = {
+							remove_idea = OAU_member
+							add_idea = AU_member
+						}
+					} 
+				} 
+				every_country = { limit={ no_jihadist_government = yes } 
+					add_opinion_modifier = { target = ISI modifier = ISIS_Are_Terrorists } 
+					add_opinion_modifier = { target = ISI modifier = terrorism_is_no_no }
+					add_opinion_modifier = { target = ISI modifier = terrorism_is_no_no_trade } 
+				} 
+			}
+		}
+	}
+} 

@@ -1,0 +1,6 @@
+spriteTypes = {  
+	spriteType ={
+		name = "GFX_select_date_All_Hail_Trump"
+		texturefile = "gfx/interface/Glory_to_Emperor_Trump.dds"
+	}  
+}
